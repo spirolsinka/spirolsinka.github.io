@@ -1,75 +1,161 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<title> MDM Recipe Search Page </title>
-        <link rel="stylesheet" type="text/css" href="search.css">
+<style>
+
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      }
+
+    input[type=button] {
+      width: 100%;
+      background-color: #696969;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white; 
+ </style>
+
+
+   <head>
+      <title> MDM Recipe Search Page </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
 
     </head>
-	<header>
-		<h1> MDM Recipes </h1> 
-		<div class="header">
-			
-		</div>
-	</header>
+
+    <header>
+    <h1> MDM Recipes </h1> 
+    <div class="header">
+      
+    </div>
+  </header>
+
+
+
+<body>
+
+    <h2> Search Recipes </h2> 
+      <div class="linkBar">
     
-    <body>
+        <p class = "linkButtons" style="font-family:sans-serif; font-style: italic; text-align: right; font-size: 24px; width:80%; margin: auto; padding-bottom: 10px; padding-top: 10px"> 
+    
+         <img class = "linkButtons" src="insta.png" height="30"  aligh="right" style="margin:0px; padding-left: 15px;"> 
+      
+          <a href="index.html">Home</a>
+       </p>
+      </div>
 
-    	<h2> Search Recipes </h2> 
-    	<h2> Home </h2>
 
-    	<div class="topnav">
-  			<input type="text" placeholder="Search..">
-		</div>
+<input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for Recipes" title="Type in a name">
 
-		<div class="highlights">
-			<h3>Top Results for "Cakes"</h3>
+ <div class="highlights">
+          <ul id="myUL">
+            <li><a href="#">Apple Rum Cake <img src="IMG_3634.jpg" alt="Apple Rum Cake" style="height:130px"></a></li>
+            <li><a href="#">Chocolate Cake <img src="IMG_3631.jpg" alt="Chocolate Cake" style="height:130px"></a></li>
+            <li><a href="#">Coffee Cake<img src="IMG_3635.jpg" alt="Cofee & Almond Cake with Chocolate Buttercream" style="height:130px"></a></li>
+            <li><a href="#">Olive Oil Cake<img src="IMG_3633.jpg" alt="Olive Oil Citrus Cake" style="height:130px"></a></li>
+            <li><a href="#">Raspberry Cake<img src="IMG_3632.jpg" alt="Raspberry Chocolate Cake" style="height:130px"></a></li>
+          </ul>
 
-		<div class="clearfix">
-  		<div class="cakepictures">
-  		<img src="IMG_3631.jpg" alt="Chocolate Cake" style="width:100%">
-  		</div>
-  		<div class="cakepictures">
- 		 <img src="IMG_3632.jpg" alt="Raspberry Chocolate Cake" style="width:100%">
-  		</div>
-  		<div class="cakepictures">
-  		<img src="IMG_3633.jpg" alt="Olive Oil Citrus Cake" style="width:100%">
-  		</div>
-  		<br>
-  		<br>
-  		<div class="cakepictures">
-  		<img src="IMG_3634.jpg" alt="Apple Rum Cake" style="width:100%">
-  		</div>
-  		<div class="cakepictures">
-  		<img src="IMG_3635.jpg" alt="Cofee & Almond Cake with Chocolate Buttercream" style="width:100%">
-  	</div>
-</div>
 </div>
 
-<hr>
+<div class="signUp">
 
-<form action="/action_page.php">
-  <div class="container">
-    <h3 id="signup">Sign Up for Email Updates</h3>
+  <div class="formBox">
+
+      <div class="signColumnA">
+        <p>Sign up for email updates </p>
+      </div>
+
+      <div class="signColumnB">
+        <input id="fullName" type="text" placeholder="Full Name">
+      </div>
+      
+      <div class="signColumnB">
+        <input id="emailAdd" type="text" placeholder="Email Address">
+      </div>
+
+      <div class="signColumnB">
+          <input id ="submit" type="button" value="Submit">
+      </div>
   </div>
 
-  <div class="container">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
-  </div>
+  <p = id= "error" class="confirmationError"> 
+    
+  </p>
 
-  <div class="container">
-    <input type="submit" value="Sign Up">
-  </div>
-</form>
+
+<script>
+
+
+  var buttonSubmit = document.querySelector("#submit"); 
+       buttonSubmit.addEventListener ("click",confirmEmail); 
+  
+  var noInput=""
+
+
+    function confirmEmail (){
+    
+    var nameInput = document.querySelector("#fullName").value; 
+    var emailInput = document.querySelector("#emailAdd").value; 
+    //way to determine format of email 
+    var mailformat =  /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+    
+          
+          if(emailInput.match(mailformat)&&nameInput==noInput)
+            {
+            error.textContent = "Please input your full name"
+            error.style.backgroundColor="red"
+            return true;
+            }
+          if(emailInput.match(mailformat)&&nameInput!==noInput)
+            {
+            error.textContent = "Success, you have signed up for our email updates"
+            error.style.backgroundColor="green"
+            return true;
+            }
+            else
+            {
+            error.textContent = "You have entered an invalid email address";
+            error.style.backgroundColor="red"
+            return false;
+            }
+    }
+
+
+function searchFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 
 <div class="footer">
-	<p>
-		DG8002 Assignment by Tabitha Grant, Dorcas Marfo, Jared Lorenz, and Volha Spirydovich
-	</p> 
+  <p>
+    DG8002 Assignment by Tabitha Grant, Dorcas Marfo, Jared Lorenz, and Volha Spirydovich
+  </p> 
 </div>
 
-	</body>
-	</html>
+</body>
+</html>
 
 
     
