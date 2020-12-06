@@ -1,0 +1,232 @@
+
+.header {
+	border-bottom: 3px solid;
+	border-color:#723f5f;
+	width: 100%;
+	
+	}
+
+h1{
+	color: #723f5f;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 50px; 
+	font-family: Montserrat;
+
+}
+
+h2{
+	color: #723f5f;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 36px; 
+	font-family: Roboto Slab;
+	font-weight: lighter;
+
+}
+
+h3{
+	background-color: #723f5f;
+	padding:3px;
+	font-size: 32px;
+	font-family: Roboto Slab;
+	color: #ffffff;
+	
+}
+
+
+body{
+	width:70%;
+	margin:auto;
+	font-size:20px;
+	font-family: Roboto Slab;
+	font-weight: lighter;
+	color: #404040;
+ 
+	}
+
+
+/* bottom section of the home page with blog posts */
+.highlights {
+	background-color: #f0ebef;
+	padding:3px;
+	font-family: Roboto Slab;
+	color: #404040;
+	font-size: 24px;
+
+}
+
+/* Clear floats after the columns. this is the section with 3 recipes */
+.row{
+	content:"";
+	display:table;
+	clear:both;
+	align-items: center;
+	margin-left: auto;
+    margin-right: auto; 
+	
+}
+
+
+/* columns in the 3 recipes section */
+.column{
+	float:left;
+	width:31.65%;
+	padding:10px;
+	height:400px;
+	align-content: center;
+	
+}
+
+
+.caption {
+	font-family: Roboto Slab;
+	font-weight: lighter;
+	font-size:24px;
+	margin:auto;
+	background-color: #f0ebef;
+	padding:10px;
+	text-align: center;
+
+}
+
+
+img{
+	float: left;
+	margin: 15px;
+	align-self: center;
+}
+
+
+.footer{
+	border-top: 5px solid;
+	border-color:#723f5f;
+	width: 100%;
+	margin-top: 20px;
+	padding:15px;
+	text-align: center;
+}
+
+
+.signUp{
+
+	margin-top:20px;	
+	margin-bottom: 20px; 
+	text-align: center;
+
+}
+.formBox{
+	width: 80%;
+	background-color: #723f5f;
+	margin-left: auto;
+    margin-right: auto; 
+	padding-right: 30px;
+	padding-left: 30px;
+    height: 80px; 
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px #EAEAEA;
+
+}
+.signColumnA{
+	float: left;
+	width: 25%;
+	margin-left: 5px; 
+	margin-right: 5px;
+	font-size: 22px;
+	margin-top:6px;
+	margin-bottom:6px;
+
+
+}
+.signColumnB{
+	float: left;
+	width: 23%;
+	margin-left: 5px; 
+	margin-right: 5px;
+	padding-top:10px;
+	padding-bottom:10px;
+
+}
+
+.confirmationError{ 
+	text-align: center;
+
+	 }
+
+.linkBar{
+	float: right;
+	width: 50%; 
+	padding-bottom: 30px;
+	padding-top: auto;
+
+} 
+.linkButtons{
+	float:right;
+
+}
+
+
+#signup {
+
+	font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+
+
+}
+
+
+.topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  margin-top: 100px;
+  margin-left: 400px;
+  border: none;
+  width: 35%;
+  font-size: 17px;
+}
+
+  
+  .topnav input[type=text] {
+  	border-radius: 25px;
+    border: 1px solid #ccc;  
+  }
+
+.highlights {
+	vertical-align: middle;
+	height: 1000px;
+	margin-top: 100px;
+	background-color: #f0ebef;
+	padding:10px;
+}
+
+{
+  box-sizing: border-box;
+
+}
+
+.cakepictures {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.clearfix {
+clear: both;
+display: table;
+
+} 
+
+.container {
+	text-align: center;
+  padding: 10px;
+  background-color: #723f5f;
+  width: 700px;
+
+}
+
+
+
+
+
