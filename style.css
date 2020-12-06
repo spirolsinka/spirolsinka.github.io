@@ -226,6 +226,20 @@ display: table;
   display: table-row; 
   float: left;
   width: 30%; 
+}
+
+.recipeColumn1{
+	float: left;
+	width: 70%;
+	}
+
+.recipeColumn2{
+	float:left;
+	width:30%;
+	padding:px;
+	background-color: #f0ebef;
+
+}
 
  
 

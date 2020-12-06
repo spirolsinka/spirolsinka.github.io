@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)file:///Users/jaredlorenz/Google%20Drive/ryersonmdm/8002:exercises/websitesprint/recipe.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+
+input[type=button] {
+  width: 100%;
+  background-color: #696969;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white; 
+
+}
+
+input[type=button]:hover {
+  background-color: #FFFFAC;
+  color: #696969;
+}
+</style>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MDM Recipes</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<header>
+		<div class="header">
+			<h1>
+				MDM Recipes
+			</h1>
+		</div>
+	</header>
+
+
+	<body>
+		<h2>A recipe collection by MDM students from Ryerson University</h2>
+		
+		<div class="linkBar">
+		
+		<p class = "linkButtons" style="font-family:sans-serif; font-style: italic; text-align: right; font-size: 24px; width:80%; margin: auto; padding-bottom: 10px; padding-top: 10px"> 
+		
+		<a href="https://www.instagram.com/simplefreshphoto/?hl=en">
+		<img class = "linkButtons" src="insta.png" height="30"  aligh="right" style="margin:0px; padding-left: 15px;" > </a>
+		 <a href="index.html">Home</a>
+		 <a href="search.html">Search Recipes</a>
+
+
+		</p>
+		</div>
+
+		</p>
+		<p></p>
+		<br>
+
+
+		
+			<h3>Granny's Rhubarb Pie</h3>
+			<div class="row">
+			<div class="recipeColumn1">
+				<img src="rpie.jpg" width="90%" style="display:table-cell">
+				<br>
+				<p style="font-style: italic;  color:#723f5f; font-size: 32px;text-align: left"> 
+					Rhubarb pie that's warm, smooth, sweet and cruncy, with a touch of strawberry to sweeten up the mix. It's so pie you'll forget it's rhubarb too.  <br></p>
+				<div class="highlights" style="height:100%; margin-right: 10px;">
+
+					<h2> INGREDIENTS</h2><br>
+					 <ul style="font-style: italic;font-size: 26px">
+            			<li>2 lb. rhubarb cut into 1" pieces (about 7 cups)</li>
+            			<li>1/2 lb strawberries, sliced</li>
+						<li>1 1/2 c granulated sugar</li>
+						<li>1/4 c rolled oat</li>
+						<li>1 tbsp lemon juice</li>
+						<li>1/4 tsp salt</li>
+						<li>All-purpose flour</li>
+						<li>2 tbsp. cold cubed butter</li> 
+						<li>1 large egg, lightly beaten with 1/2 tsp. water</li>
+						<li>Brown sugar, to sprinkle</li>
+					</ul>
+
+					<h2>DIRECTIONS</h2>
+					<ol>
+						<li>In a large bowl, combine rhubarb, sugar, cornstarch, lemon juice, and salt. On a lightly floured surface, roll each piece of dough out into two 12" rounds. </li>
+						<li>Fit one round into a 9" glass pie plate and fill with rhubarb mixture. Dot evenly with butter, then cover pie with remaining round and trim overhang to 1”. Fold edges of top dough under and crimp together. </li>
+						<li>Using a sharp knife, make five 1" slits in a circle in the center of the top crust. Freeze pie for 30 minutes.</li>
+						<li>Preheat oven to 375° with a rack in the middle and the bottom third. Brush top crust all over with egg wash and sprinkle generously with sanding sugar. </li>
+						<li>Bake pie on middle rack, with a foil-lined baking sheet on bottom rack to catch juices, about 1 hour. Check to see if top crust is browning too quickly and tent with foil if necessary. Continue to cook, checking every 10 minutes to see if top crust needs to be tented, for about 30 minutes more, until bubbling in center and bottom crust is golden.</li>
+						<li>Transfer pie to a rack to cool completely.</li>
+					</ol>
+
+				</div>
+			</div>	
+			<div class="recipeColumn2">
+				 <h2 style="font-size: 30px">Other Recipes for you</h2>
+				 <img src="IMG_3632.jpg" style="width:90%">
+				 <a href="recipe.html" style="font-style: italic; text-decoration: none; color:#723f5f"> <div class="caption" id="caption1">Raspberry Cake</div></a>
+				 <img src="IMG_3633.jpg" style="width:90%">
+				 <a href="recipe.html" style="font-style: italic; text-decoration: none; color:#723f5f"> <div class="caption" id="caption1">Olive Oil Cake</div></a>
+
+			</div>
+			</div>
+				
+	
+		<br>
+
+
+
+<div class="signUp" style="width:100%">
+
+	<div class="formBox">
+
+			<div class="signColumnA">
+				<p>Sign up for email updates </p>
+			</div>
+
+			<div class="signColumnB">
+				<input id="fullName" type="text" placeholder="Full Name">
+			</div>
+			
+			<div class="signColumnB">
+				<input id="emailAdd" type="text" placeholder="Email Address">
+			</div>
+
+			<div class="signColumnB">
+					<input id="submit" type="button" value="Submit">
+			</div>
+	</div>
+
+	<p =="" id="error" class="confirmationError"> 
+		
+	</p>
+
+
+</div>
+
+
+
+<div class="footer">
+	<p>
+		DG8002 Assignment by Tabitha Grant, Dorcas Marfo, Jared Lorenz, and Volha Spirydovich
+	</p> 
+</div>
+
+
+
+
+<script>
+	/*variables*/
+	/*mouseover and mouseout colour changes for the top 3 recipes*/
+	var highlighter1=document.querySelector("#caption1");
+	var highlighter2=document.querySelector("#caption2");
+	var highlighter3=document.querySelector("#caption3");
+    highlighter1.addEventListener("mouseover", changeColour);
+    highlighter1.addEventListener("mouseout", changeColourBack);
+	highlighter2.addEventListener("mouseover", changeColour);
+    highlighter2.addEventListener("mouseout", changeColourBack);
+	highlighter3.addEventListener("mouseover", changeColour);
+    highlighter3.addEventListener("mouseout", changeColourBack);
+
+
+
+
+
+    /* function definitions */
+
+    /*mouseover and mouseout colour chnages for the top 3 recipes*/
+	function changeColour(){
+		this.style.backgroundColor="#723f5f";
+		this.style.color="white";
+	}
+	function changeColourBack(){
+		this.style.backgroundColor="#f0ebef";
+		this.style.color="#723f5f";
+	}
+
+
+	//TAB - Sign up Script 
+	var buttonSubmit = document.querySelector("#submit"); 
+        buttonSubmit.addEventListener ("click",confirmEmail); 
+	
+	var noInput=""
+
+
+
+	function confirmEmail (){
+		var nameInput = document.querySelector("#fullName").value; 
+		var emailInput = document.querySelector("#emailAdd").value; 
+		//way to determine format of email 
+		var mailformat =  /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+		
+		
+		if(emailInput.match(mailformat)&&nameInput==noInput)
+			{
+			error.textContent = "Please input your full name"
+			error.style.backgroundColor="red"
+			return true;
+			}
+		if(emailInput.match(mailformat)&&nameInput!==noInput)
+			{
+			error.textContent = "Success, you have signed up for our email updates"
+			error.style.backgroundColor="green"
+			return true;
+			}
+			else
+			{
+			error.textContent = "You have entered an invalid email address";
+			error.style.backgroundColor="red"
+			return false;
+			}
+			
+	}
+<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>
+
+
+
+	
+
+	
+</body></html>
