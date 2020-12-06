@@ -115,30 +115,30 @@ input[type=button]:hover {
 
 
 
-<div class="signUp" style="width:100%">
+<div class="signUp">
 
-	<div class="formBox">
+  <div class="formBox">
 
-			<div class="signColumnA">
-				<p>Sign up for email updates </p>
-			</div>
+      <div class="signColumnA">
+        <p>Sign up for email updates </p>
+      </div>
 
-			<div class="signColumnB">
-				<input id="fullName" type="text" placeholder="Full Name">
-			</div>
-			
-			<div class="signColumnB">
-				<input id="emailAdd" type="text" placeholder="Email Address">
-			</div>
+      <div class="signColumnB">
+        <input id="fullName" type="text" placeholder="Full Name">
+      </div>
+      
+      <div class="signColumnB">
+        <input id="emailAdd" type="text" placeholder="Email Address">
+      </div>
 
-			<div class="signColumnB">
-					<input id="submit" type="button" value="Submit">
-			</div>
-	</div>
+      <div class="signColumnB">
+          <input id ="submit" type="button" value="Submit">
+      </div>
+  </div>
 
-	<p =="" id="error" class="confirmationError"> 
-		
-	</p>
+  <p = id= "error" class="confirmationError" style="color:white"> 
+    
+  </p>
 
 
 </div>
@@ -155,42 +155,13 @@ input[type=button]:hover {
 
 
 <script>
-	/*variables*/
-	/*mouseover and mouseout colour changes for the top 3 recipes*/
-	var highlighter1=document.querySelector("#caption1");
-	var highlighter2=document.querySelector("#caption2");
-	var highlighter3=document.querySelector("#caption3");
-    highlighter1.addEventListener("mouseover", changeColour);
-    highlighter1.addEventListener("mouseout", changeColourBack);
-	highlighter2.addEventListener("mouseover", changeColour);
-    highlighter2.addEventListener("mouseout", changeColourBack);
-	highlighter3.addEventListener("mouseover", changeColour);
-    highlighter3.addEventListener("mouseout", changeColourBack);
-
-
-
-
-
-    /* function definitions */
-
-    /*mouseover and mouseout colour chnages for the top 3 recipes*/
-	function changeColour(){
-		this.style.backgroundColor="#723f5f";
-		this.style.color="white";
-	}
-	function changeColourBack(){
-		this.style.backgroundColor="#f0ebef";
-		this.style.color="#723f5f";
-	}
-
-
+	
 	//TAB - Sign up Script 
+
 	var buttonSubmit = document.querySelector("#submit"); 
         buttonSubmit.addEventListener ("click",confirmEmail); 
 	
 	var noInput=""
-
-
 
 	function confirmEmail (){
 		var nameInput = document.querySelector("#fullName").value; 
@@ -219,16 +190,11 @@ input[type=button]:hover {
 			}
 			
 	}
-<script type="text/javascript">
-    document.getElementById('frmSearch').onsubmit = function() {
-        window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
-        return false;
-    }
+
+
 </script>
 
-
-
-	
+	</body>
 
 	
-</body></html>
+</html>
